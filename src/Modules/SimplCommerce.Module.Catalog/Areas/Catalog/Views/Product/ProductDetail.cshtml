@@ -16,7 +16,7 @@
 
 @section head {
     <link simpl-append-version="true" rel="stylesheet" href="~/lib/smoothproducts/css/smoothproducts.css" />
-    <link simpl-append-version="true" rel="stylesheet" href="~/modules/catalog/product-detail.css" />
+    <link simpl-append-version="true" rel="stylesheet" href="~/_content/SimplCommerce.Module.Catalog/product-detail.css" />
 }
 
 <nav aria-label="breadcrumb">
@@ -33,14 +33,32 @@
 <div class="product-detail">
     <div class="row">
         <div class="col-md-6">
-            <div class="sp-wrap">
-                @foreach (var image in Model.Images)
-                {
-                    <a href="@image.Url">
-                        <img src="@image.ThumbnailUrl" alt="" />
-                    </a>
-                }
+            <div id="main-product-images" class="product-images">
+                <div class="sp-wrap">
+                    @foreach (var image in Model.Images)
+                    {
+                        <a href="@image.Url">
+                            <img src="@image.ThumbnailUrl" alt="" />
+                        </a>
+                    }
+                </div>
             </div>
+            @foreach(var variant in Model.Variations)
+            {
+                if (variant.Images.Any())
+                {
+                    <div class="product-images" data-images-variation-name="@variant.NormalizedName" style="display:none;">
+                        <div class="sp-wrap">
+                            @foreach (var image in variant.Images)
+                            {
+                                <a href="@image.Url">
+                                    <img src="@image.ThumbnailUrl" alt="" />
+                                </a>
+                            }
+                        </div>
+                    </div>
+                 }
+            }
         </div>
         <div class="col-md-6">
             <div class="product-name">
@@ -171,7 +189,7 @@
                         <h3>@Model.CalculatedProductPrice.PriceString</h3>
                         if (Model.CalculatedProductPrice.PercentOfSaving > 0)
                         {
-                            <p class="product-price-regular">Model.CalculatedProductPrice.OldPriceString</p>
+                            <p class="product-price-regular">@Model.CalculatedProductPrice.OldPriceString</p>
                             <p class="product-price-saving">@Localizer["You save"] (@(Model.CalculatedProductPrice.PercentOfSaving)%)</p>
                         }
                     }
@@ -290,5 +308,5 @@
 @section scripts {
     <partial name="_ValidationScriptsPartial" />
     <script simpl-append-version="true" src="~/lib/smoothproducts/js/smoothproducts.js"></script>
-    <script simpl-append-version="true" src="~/modules/catalog/product-detail.js"></script>
+    <script simpl-append-version="true" src="~/_content/SimplCommerce.Module.Catalog/product-detail.js"></script>
 }
