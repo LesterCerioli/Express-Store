@@ -2,6 +2,7 @@
 
 ## High level architecture
 
+![SimpleCommerce - Modular architecture](https://raw.githubusercontent.com/simplcommerce/SimplCommerce/master/modular-architecture.png)
 
 ## Build Status
 | Build server    | Platform       | Status      |
