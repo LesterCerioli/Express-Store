@@ -1,9 +1,10 @@
-name: Express Store CI/CD
+name: Express Store CI & CD
 
 on:
   push:
     branches: [ master ]
-  
+  pull_request:
+    branches: [ master ]
 
 jobs:
   build:
@@ -17,8 +18,8 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ./SimplCommerce.sln
     - name: Build
-      run: dotnet build -c Release --no-restore
+      run: dotnet build ./SimplCommerce.sln
     - name: Test
-      run: dotnet test 
+      run: dotnet test ./SimplCommerce.sln
