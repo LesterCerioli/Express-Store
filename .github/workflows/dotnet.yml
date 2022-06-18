@@ -2,7 +2,7 @@ name: Express Store CI & CD
 
 on:
   push:
-    branches: [ issue/5 ]
+    branches: [ issue/41 ]
   pull_request:
     branches: [ development ]
 
