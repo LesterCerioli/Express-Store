@@ -15,7 +15,7 @@ jobs:
     displayName: 'Use .NET Core sdk'
     inputs:
       packageType: 'sdk'
-      version: '5.0.100'
+      version: '6.0.100'
   - script: dotnet build ./SimplCommerce.sln
     displayName: 'dotnet build'
   - task: DotNetCoreCLI@2
@@ -39,7 +39,75 @@ jobs:
       codeCoverageTool: Cobertura
       summaryFileLocation: $(Build.SourcesDirectory)/coverlet/reports/Cobertura.xml  
 
+- job: macOS
+  pool:
+    vmImage: 'macOS-10.15'
+  steps:
+  - task: UseDotNet@2
+    displayName: 'Use .NET Core sdk'
+    inputs:
+      packageType: 'sdk'
+      version: '6.0.100'
+  - script: dotnet build ./SimplCommerce.sln
+    displayName: 'dotnet build'
+  - task: DotNetCoreCLI@2
+    displayName: 'run tests'
+    inputs:
+      command: test
+      arguments:  '--logger trx /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Exclude=[xunit.*]*%2c[System.*]*'
+      projects: 'test/**/*.csproj'
+      nobuild: true
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: custom
+      custom: tool
+      arguments: install --tool-path . dotnet-reportgenerator-globaltool
+      displayName: Install ReportGenerator tool
+  - script: ./reportgenerator -reports:$(Build.SourcesDirectory)/test/**/coverage.cobertura.xml -targetdir:$(Build.SourcesDirectory)/coverlet/reports -reporttypes:"HtmlInline_AzurePipelines;Cobertura"
+    displayName: Create reports
+  - task: PublishCodeCoverageResults@1
+    displayName: 'Publish code coverage'
+    inputs:
+      codeCoverageTool: Cobertura
+      summaryFileLocation: $(Build.SourcesDirectory)/coverlet/reports/Cobertura.xml  
 
+- job: Windows
+  pool:
+    vmImage: 'windows-2019'
+  steps:
+  - task: UseDotNet@2
+    displayName: 'Use .NET Core sdk'
+    inputs:
+      packageType: 'sdk'
+      version: '6.0.100'
+  - task: DotNetCoreCLI@2
+    displayName: 'Restoring code using dotnet restore'
+    inputs: 
+      command: 'restore'
+      projects: '**/*/*.csproj'
+      includeNuGetOrg: true
+  - script: dotnet build ./SimplCommerce.sln
+    displayName: 'dotnet build'
+  - task: DotNetCoreCLI@2
+    displayName: 'run tests'
+    inputs:
+      command: test
+      arguments:  '--logger trx /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Exclude=[xunit.*]*%2c[System.*]*'
+      projects: 'test/**/*.csproj'
+      nobuild: true
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: custom
+      custom: tool
+      arguments: install --tool-path . dotnet-reportgenerator-globaltool
+      displayName: Install ReportGenerator tool
+  - script: .\reportgenerator -reports:$(Build.SourcesDirectory)\test\**\coverage.cobertura.xml -targetdir:$(Build.SourcesDirectory)\coverlet\reports -reporttypes:"HtmlInline_AzurePipelines;Cobertura"
+    displayName: Create reports 
+  - task: PublishCodeCoverageResults@1
+    displayName: 'Publish code coverage'
+    inputs:
+      codeCoverageTool: Cobertura
+      summaryFileLocation: $(Build.SourcesDirectory)/coverlet/reports/Cobertura.xml  
 
 - job: LinuxRelease
   pool:
@@ -51,7 +119,7 @@ jobs:
     displayName: 'Use .NET Core sdk'
     inputs:
       packageType: 'sdk'
-      version: '5.0.100'
+      version: '6.0.100'
   - script: dotnet build --configuration $(buildConfiguration)
     displayName: 'dotnet build $(buildConfiguration)'
   - task: DotNetCoreCLI@2

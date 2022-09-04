@@ -54,7 +54,7 @@ namespace SimplCommerce.Module.ShoppingCart.Areas.ShoppingCart.Controllers
             }
             else
             {
-                return Ok(new { Error = true, Message = result.Error });
+                return Ok(result);
             }
         }
 
@@ -64,7 +64,7 @@ namespace SimplCommerce.Module.ShoppingCart.Areas.ShoppingCart.Controllers
             var currentUser = await _workContext.GetCurrentUser();
             var cart = await _cartService.GetActiveCartDetails(currentUser.Id);
 
-            var model = new AddToCartResult(_currencyService)
+            var model = new AddToCartResultVm(_currencyService)
             {
                 CartItemCount = cart.Items.Count,
                 CartAmount = cart.SubTotal
@@ -90,6 +90,10 @@ namespace SimplCommerce.Module.ShoppingCart.Areas.ShoppingCart.Controllers
         {
             var currentUser = await _workContext.GetCurrentUser();
             var cart = await _cartService.GetActiveCartDetails(currentUser.Id);
+            if(cart == null)
+            {
+                cart = new CartVm(_currencyService);
+            }
 
             return Json(cart);
         }
@@ -97,6 +101,10 @@ namespace SimplCommerce.Module.ShoppingCart.Areas.ShoppingCart.Controllers
         [HttpPost("cart/update-item-quantity")]
         public async Task<IActionResult> UpdateQuantity([FromBody] CartQuantityUpdate model)
         {
+            if(model.Quantity <= 0)
+            {
+                return Ok(new { Error = true, Message = _localizer["The quantity must be larger than zero"].Value });
+            }
             var currentUser = await _workContext.GetCurrentUser();
             var cart = await _cartService.GetActiveCart(currentUser.Id);
 
