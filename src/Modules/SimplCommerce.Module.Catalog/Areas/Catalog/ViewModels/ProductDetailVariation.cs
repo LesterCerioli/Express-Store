@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using SimplCommerce.Module.Catalog.Models;
-using SimplCommerce.Module.Core.Areas.Core.ViewModels;
+using SimplCommerce.Services.Core.API.ViewModels;
 
 namespace SimplCommerce.Module.Catalog.Areas.Catalog.ViewModels
 {
