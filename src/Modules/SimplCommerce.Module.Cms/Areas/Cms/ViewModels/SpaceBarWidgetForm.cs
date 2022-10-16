@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using SimplCommerce.Module.Core.Areas.Core.ViewModels;
+using SimplCommerce.Services.Core.API.ViewModels;
 
 namespace SimplCommerce.Module.Cms.Areas.Cms.ViewModels
 {
