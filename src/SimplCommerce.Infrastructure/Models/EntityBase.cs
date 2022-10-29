@@ -8,7 +8,7 @@
     ///     base class leverages this assumption.  If you want an entity with a type other
     ///     than int, such as string, then use <see cref="EntityBaseWithTypedId{TId}" /> instead.
     /// </summary>
-    public abstract class EntityBase : EntityBaseWithTypedId<long>
+    public abstract class EntityBase : 
     {
     }
 }
