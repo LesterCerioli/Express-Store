@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6B0CDEB6-019B-475D-8EF9-86CB014000D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{E96BBB6B-1783-4801-8E43-E658C0412B85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PaymentsContext", "PaymentsContext", "{2292571A-9DEB-4DA3-993F-249AED9CA010}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.Payments", "src\Modules\PaymentsContext\ExpressStore.Modules.Payments\ExpressStore.Modules.Payments.csproj", "{F84C8CFA-31F5-416E-9C04-5870FDCE0725}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F84C8CFA-31F5-416E-9C04-5870FDCE0725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F84C8CFA-31F5-416E-9C04-5870FDCE0725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F84C8CFA-31F5-416E-9C04-5870FDCE0725}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F84C8CFA-31F5-416E-9C04-5870FDCE0725}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E96BBB6B-1783-4801-8E43-E658C0412B85} = {6B0CDEB6-019B-475D-8EF9-86CB014000D5}
+		{2292571A-9DEB-4DA3-993F-249AED9CA010} = {E96BBB6B-1783-4801-8E43-E658C0412B85}
+		{F84C8CFA-31F5-416E-9C04-5870FDCE0725} = {2292571A-9DEB-4DA3-993F-249AED9CA010}
+	EndGlobalSection
+EndGlobal
