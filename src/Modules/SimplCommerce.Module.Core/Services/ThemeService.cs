@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 using SimplCommerce.Infrastructure;
 using SimplCommerce.Module.Core.Models;
 using SimplCommerce.Infrastructure.Data;
-using SimplCommerce.Module.Core.Areas.Core.ViewModels;
+using SimplCommerce.Module.Core.Shared.ViewModels;
 
 namespace SimplCommerce.Module.Core.Services
 {

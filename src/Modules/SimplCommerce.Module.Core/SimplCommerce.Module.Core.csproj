@@ -17,8 +17,4 @@
   <ItemGroup>
     <ProjectReference Include="..\..\SimplCommerce.Infrastructure\SimplCommerce.Infrastructure.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Areas\Core\Views\EmailTemplate\" />
-  </ItemGroup>
 </Project>

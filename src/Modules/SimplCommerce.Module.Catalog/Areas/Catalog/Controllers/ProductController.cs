@@ -9,7 +9,6 @@ using SimplCommerce.Infrastructure.Data;
 using SimplCommerce.Module.Catalog.Areas.Catalog.ViewModels;
 using SimplCommerce.Module.Catalog.Models;
 using SimplCommerce.Module.Catalog.Services;
-using SimplCommerce.Module.Core.Areas.Core.ViewModels;
 using SimplCommerce.Module.Core.Events;
 using SimplCommerce.Module.Core.Services;
 

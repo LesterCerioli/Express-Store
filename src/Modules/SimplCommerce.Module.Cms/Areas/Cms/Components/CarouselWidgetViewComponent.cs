@@ -5,8 +5,8 @@ using Microsoft.Extensions.Localization;
 using Newtonsoft.Json;
 using SimplCommerce.Infrastructure.Web;
 using SimplCommerce.Module.Cms.Areas.Cms.ViewModels;
-using SimplCommerce.Module.Core.Areas.Core.ViewModels;
 using SimplCommerce.Module.Core.Services;
+using SimplCommerce.Services.Core.API.ViewModels;
 
 namespace SimplCommerce.Module.Cms.Areas.Cms.Components
 {
