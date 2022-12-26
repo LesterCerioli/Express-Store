@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{80395FFB-58BC-418E-885F-9D9E2A606BF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{2CA461AD-BA25-42EE-A6D1-2818F89CD9B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payments", "Payments", "{311372A4-8A48-4646-97F5-574FBE595AC7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressStore.Modules.Payments", "src\Modules\Payments\ExpressStore.Modules.Payments\ExpressStore.Modules.Payments.csproj", "{479A34CA-EAFD-4F7F-BA4F-D86B88B38208}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jobs Runners", "Jobs Runners", "{5C2AE35B-85C4-4B0F-A2DE-FE4942A615B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Payments.CoreWCFService", "src\Jobs Runners\ExpressStore.Payments.CoreWCFService\ExpressStore.Payments.CoreWCFService.csproj", "{1B2BFC71-DF2C-45C4-824C-33CD03B7061D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{479A34CA-EAFD-4F7F-BA4F-D86B88B38208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{479A34CA-EAFD-4F7F-BA4F-D86B88B38208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{479A34CA-EAFD-4F7F-BA4F-D86B88B38208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{479A34CA-EAFD-4F7F-BA4F-D86B88B38208}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B2BFC71-DF2C-45C4-824C-33CD03B7061D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B2BFC71-DF2C-45C4-824C-33CD03B7061D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B2BFC71-DF2C-45C4-824C-33CD03B7061D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B2BFC71-DF2C-45C4-824C-33CD03B7061D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2CA461AD-BA25-42EE-A6D1-2818F89CD9B9} = {80395FFB-58BC-418E-885F-9D9E2A606BF2}
+		{311372A4-8A48-4646-97F5-574FBE595AC7} = {2CA461AD-BA25-42EE-A6D1-2818F89CD9B9}
+		{479A34CA-EAFD-4F7F-BA4F-D86B88B38208} = {311372A4-8A48-4646-97F5-574FBE595AC7}
+		{5C2AE35B-85C4-4B0F-A2DE-FE4942A615B9} = {80395FFB-58BC-418E-885F-9D9E2A606BF2}
+		{1B2BFC71-DF2C-45C4-824C-33CD03B7061D} = {5C2AE35B-85C4-4B0F-A2DE-FE4942A615B9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD9D25A0-358B-447B-8FC1-D14D3A0F29B2}
+	EndGlobalSection
+EndGlobal
