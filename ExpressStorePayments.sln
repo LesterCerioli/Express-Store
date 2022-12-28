@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{80395FFB-58BC-418E-885F-9D9E2A606BF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{2CA461AD-BA25-42EE-A6D1-2818F89CD9B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payments", "Payments", "{311372A4-8A48-4646-97F5-574FBE595AC7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressStore.Modules.Payments", "src\Modules\Payments\ExpressStore.Modules.Payments\ExpressStore.Modules.Payments.csproj", "{479A34CA-EAFD-4F7F-BA4F-D86B88B38208}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jobs Runners", "Jobs Runners", "{5C2AE35B-85C4-4B0F-A2DE-FE4942A615B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Payments.CoreWCFService", "src\Jobs Runners\ExpressStore.Payments.CoreWCFService\ExpressStore.Payments.CoreWCFService.csproj", "{1B2BFC71-DF2C-45C4-824C-33CD03B7061D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{BC4F04BB-86B9-4283-997D-F8F45898E21E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payments", "Payments", "{A7B58533-C773-4645-9B06-49D99D7C5695}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Payments.Infrastructure", "src\Infrastructure\Payments\ExpressStore.Payments.Infrastructure\ExpressStore.Payments.Infrastructure.csproj", "{DED321A1-75BC-4C99-A72D-0AAAAD7DABF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.PaymentBraintree", "src\Modules\Payments\ExpressStore.Modules.PaymentBraintree\ExpressStore.Modules.PaymentBraintree.csproj", "{DC301434-B43B-4251-9354-3409ABEBE82A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.PaymentCashfree", "src\Modules\Payments\ExpressStore.Modules.PaymentCashfree\ExpressStore.Modules.PaymentCashfree.csproj", "{9F002523-F453-4155-898B-20E0E2614A71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.PaymentCoD", "src\Modules\Payments\ExpressStore.Modules.PaymentCoD\ExpressStore.Modules.PaymentCoD.csproj", "{B2C4018C-9158-42A9-9700-1594015C9FA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.PaymentMono", "src\Modules\Payments\ExpressStore.Modules.PaymentMono\ExpressStore.Modules.PaymentMono.csproj", "{509F70CC-452A-488D-B1F8-0E515B9D0693}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{479A34CA-EAFD-4F7F-BA4F-D86B88B38208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{479A34CA-EAFD-4F7F-BA4F-D86B88B38208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{479A34CA-EAFD-4F7F-BA4F-D86B88B38208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{479A34CA-EAFD-4F7F-BA4F-D86B88B38208}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B2BFC71-DF2C-45C4-824C-33CD03B7061D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B2BFC71-DF2C-45C4-824C-33CD03B7061D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B2BFC71-DF2C-45C4-824C-33CD03B7061D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B2BFC71-DF2C-45C4-824C-33CD03B7061D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DED321A1-75BC-4C99-A72D-0AAAAD7DABF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DED321A1-75BC-4C99-A72D-0AAAAD7DABF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DED321A1-75BC-4C99-A72D-0AAAAD7DABF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DED321A1-75BC-4C99-A72D-0AAAAD7DABF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC301434-B43B-4251-9354-3409ABEBE82A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC301434-B43B-4251-9354-3409ABEBE82A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC301434-B43B-4251-9354-3409ABEBE82A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC301434-B43B-4251-9354-3409ABEBE82A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F002523-F453-4155-898B-20E0E2614A71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F002523-F453-4155-898B-20E0E2614A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F002523-F453-4155-898B-20E0E2614A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F002523-F453-4155-898B-20E0E2614A71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2C4018C-9158-42A9-9700-1594015C9FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2C4018C-9158-42A9-9700-1594015C9FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2C4018C-9158-42A9-9700-1594015C9FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2C4018C-9158-42A9-9700-1594015C9FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{509F70CC-452A-488D-B1F8-0E515B9D0693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{509F70CC-452A-488D-B1F8-0E515B9D0693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{509F70CC-452A-488D-B1F8-0E515B9D0693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{509F70CC-452A-488D-B1F8-0E515B9D0693}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2CA461AD-BA25-42EE-A6D1-2818F89CD9B9} = {80395FFB-58BC-418E-885F-9D9E2A606BF2}
+		{311372A4-8A48-4646-97F5-574FBE595AC7} = {2CA461AD-BA25-42EE-A6D1-2818F89CD9B9}
+		{479A34CA-EAFD-4F7F-BA4F-D86B88B38208} = {311372A4-8A48-4646-97F5-574FBE595AC7}
+		{5C2AE35B-85C4-4B0F-A2DE-FE4942A615B9} = {80395FFB-58BC-418E-885F-9D9E2A606BF2}
+		{1B2BFC71-DF2C-45C4-824C-33CD03B7061D} = {5C2AE35B-85C4-4B0F-A2DE-FE4942A615B9}
+		{BC4F04BB-86B9-4283-997D-F8F45898E21E} = {80395FFB-58BC-418E-885F-9D9E2A606BF2}
+		{A7B58533-C773-4645-9B06-49D99D7C5695} = {BC4F04BB-86B9-4283-997D-F8F45898E21E}
+		{DED321A1-75BC-4C99-A72D-0AAAAD7DABF1} = {A7B58533-C773-4645-9B06-49D99D7C5695}
+		{DC301434-B43B-4251-9354-3409ABEBE82A} = {311372A4-8A48-4646-97F5-574FBE595AC7}
+		{9F002523-F453-4155-898B-20E0E2614A71} = {311372A4-8A48-4646-97F5-574FBE595AC7}
+		{B2C4018C-9158-42A9-9700-1594015C9FA6} = {311372A4-8A48-4646-97F5-574FBE595AC7}
+		{509F70CC-452A-488D-B1F8-0E515B9D0693} = {311372A4-8A48-4646-97F5-574FBE595AC7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD9D25A0-358B-447B-8FC1-D14D3A0F29B2}
+	EndGlobalSection
+EndGlobal
