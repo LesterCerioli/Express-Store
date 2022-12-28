@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{49005658-298B-4348-B01E-10FEE94150C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{7DBAD3FA-7AEF-4C43-A962-038129BC682D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ActivityLog", "ActivityLog", "{BCF59DC1-484E-45F6-B521-E90C16EFDB74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.ActivityLog", "src\Modules\ActivityLog\ExpressStore.Modules.ActivityLog\ExpressStore.Modules.ActivityLog.csproj", "{DACFE9AB-3774-479F-8368-612C7701F8EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{6C6386C4-C5AD-4E84-BA0D-86CA9A324B34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ActivityLog", "ActivityLog", "{84F26DB2-2A7B-4DAA-B2E9-2CE07E2E1D52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.ActivityLog.Infrastructure", "src\Infrastructure\ActivityLog\ExpressStore.ActivityLog.Infrastructure\ExpressStore.ActivityLog.Infrastructure.csproj", "{9AD809F7-D265-4348-B578-AFCA1FE2C2D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAPIs", "WebAPIs", "{D3AED278-2C97-4E84-A9AC-F2850B743B8B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ActivityLog", "ActivityLog", "{7002D929-21A6-44E0-A85B-D5F383767C3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Services.ActivityLog.API", "src\WebAPIs\ActivityLog\ExpressStore.Services.ActivityLog.API\ExpressStore.Services.ActivityLog.API.csproj", "{03593F7F-E8E9-4F60-A4DB-F241ACC5DB19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DACFE9AB-3774-479F-8368-612C7701F8EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DACFE9AB-3774-479F-8368-612C7701F8EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DACFE9AB-3774-479F-8368-612C7701F8EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DACFE9AB-3774-479F-8368-612C7701F8EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AD809F7-D265-4348-B578-AFCA1FE2C2D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AD809F7-D265-4348-B578-AFCA1FE2C2D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AD809F7-D265-4348-B578-AFCA1FE2C2D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AD809F7-D265-4348-B578-AFCA1FE2C2D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03593F7F-E8E9-4F60-A4DB-F241ACC5DB19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03593F7F-E8E9-4F60-A4DB-F241ACC5DB19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03593F7F-E8E9-4F60-A4DB-F241ACC5DB19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03593F7F-E8E9-4F60-A4DB-F241ACC5DB19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7DBAD3FA-7AEF-4C43-A962-038129BC682D} = {49005658-298B-4348-B01E-10FEE94150C1}
+		{BCF59DC1-484E-45F6-B521-E90C16EFDB74} = {7DBAD3FA-7AEF-4C43-A962-038129BC682D}
+		{DACFE9AB-3774-479F-8368-612C7701F8EC} = {BCF59DC1-484E-45F6-B521-E90C16EFDB74}
+		{6C6386C4-C5AD-4E84-BA0D-86CA9A324B34} = {49005658-298B-4348-B01E-10FEE94150C1}
+		{84F26DB2-2A7B-4DAA-B2E9-2CE07E2E1D52} = {6C6386C4-C5AD-4E84-BA0D-86CA9A324B34}
+		{9AD809F7-D265-4348-B578-AFCA1FE2C2D1} = {84F26DB2-2A7B-4DAA-B2E9-2CE07E2E1D52}
+		{D3AED278-2C97-4E84-A9AC-F2850B743B8B} = {49005658-298B-4348-B01E-10FEE94150C1}
+		{7002D929-21A6-44E0-A85B-D5F383767C3F} = {D3AED278-2C97-4E84-A9AC-F2850B743B8B}
+		{03593F7F-E8E9-4F60-A4DB-F241ACC5DB19} = {7002D929-21A6-44E0-A85B-D5F383767C3F}
+	EndGlobalSection
+EndGlobal
