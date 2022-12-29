@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{20EFE7B5-97E4-4AC0-B986-646F6BC49181}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jobs Runners", "Jobs Runners", "{06DD1C77-0CA7-4522-B260-829B419095C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.HangfineJobs", "src\Jobs Runners\ExpressStore.Modules.HangfineJobs\ExpressStore.Modules.HangfineJobs.csproj", "{E66C2B26-3429-45AA-A248-7B33B1B544D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E66C2B26-3429-45AA-A248-7B33B1B544D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E66C2B26-3429-45AA-A248-7B33B1B544D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E66C2B26-3429-45AA-A248-7B33B1B544D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E66C2B26-3429-45AA-A248-7B33B1B544D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{06DD1C77-0CA7-4522-B260-829B419095C4} = {20EFE7B5-97E4-4AC0-B986-646F6BC49181}
+		{E66C2B26-3429-45AA-A248-7B33B1B544D5} = {06DD1C77-0CA7-4522-B260-829B419095C4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C823AEF-D908-45DD-B88E-7E7D8FC1BF6F}
+	EndGlobalSection
+EndGlobal

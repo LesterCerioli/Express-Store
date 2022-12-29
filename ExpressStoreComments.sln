@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FD6FE1C1-0C92-4774-A160-C33E94122315}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{0332AC85-FB7E-489D-9DC9-E3BAC8C31E7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comments", "Comments", "{B2C6799A-C36F-492C-BD9F-7C255FC2ECB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Comments.Infrastructure", "src\Infrastructure\Comments\ExpressStore.Comments.Infrastructure\ExpressStore.Comments.Infrastructure.csproj", "{9559052C-0C40-4E82-ACC9-C7D4E0AB276B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{E6D25710-16F6-4E95-BF29-5A783F304111}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comments", "Comments", "{570B18DA-DEDA-438D-8B4D-708AB57C78EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.Comments", "src\Modules\Comments\ExpressStore.Modules.Comments\ExpressStore.Modules.Comments.csproj", "{1CEDDD44-86BA-4002-8F33-12E353DBA44D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9559052C-0C40-4E82-ACC9-C7D4E0AB276B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9559052C-0C40-4E82-ACC9-C7D4E0AB276B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9559052C-0C40-4E82-ACC9-C7D4E0AB276B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9559052C-0C40-4E82-ACC9-C7D4E0AB276B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CEDDD44-86BA-4002-8F33-12E353DBA44D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CEDDD44-86BA-4002-8F33-12E353DBA44D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CEDDD44-86BA-4002-8F33-12E353DBA44D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CEDDD44-86BA-4002-8F33-12E353DBA44D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0332AC85-FB7E-489D-9DC9-E3BAC8C31E7E} = {FD6FE1C1-0C92-4774-A160-C33E94122315}
+		{B2C6799A-C36F-492C-BD9F-7C255FC2ECB5} = {0332AC85-FB7E-489D-9DC9-E3BAC8C31E7E}
+		{9559052C-0C40-4E82-ACC9-C7D4E0AB276B} = {B2C6799A-C36F-492C-BD9F-7C255FC2ECB5}
+		{E6D25710-16F6-4E95-BF29-5A783F304111} = {FD6FE1C1-0C92-4774-A160-C33E94122315}
+		{570B18DA-DEDA-438D-8B4D-708AB57C78EB} = {E6D25710-16F6-4E95-BF29-5A783F304111}
+		{1CEDDD44-86BA-4002-8F33-12E353DBA44D} = {570B18DA-DEDA-438D-8B4D-708AB57C78EB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90FC463E-4EC4-467D-96F6-25DA61E7E0B9}
+	EndGlobalSection
+EndGlobal
