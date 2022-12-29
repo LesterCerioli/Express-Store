@@ -148,6 +148,45 @@ Partial configuration support including services & endpoints
 Extensibility (IServiceBehavior and IEndpointBehavior) – most extensibility is available
 Major WCF features not yet implemented include:
 
+## AWS Lambda
+
+AWS is a service into AWS that allow deploy APIs and this service doesn~t requires physic server ou same a VM. This service 
+service is based on Serverless.
+The costs for this type of service is very low ~cause we pay only by using.
+
+=>ISteps:
+
+* Add the Amazon.Lambda.AspNetCoreServer NuGet package.
+* Add a Lambda function and bootstrap the ASP.NET Core framework.
+* Add the [Amazon.Lambda.Tools](https://www.nuget.org/packages/Amazon.Lambda.Tools) NuGet package to enable the toolkit’s deployment features.
+* Add a serverless.template file to define Amazon API Gateway.
+* Deploy the project.
+
+## Setting Up the Lambda Function
+The first step is to add the Amazon.Lambda.AspNetCoreServer NuGet package that bridges the communication between Amazon API Gateway and the ASP.NET Core framework.
+
+After you add the package, add a new class named LambdaFunction and have it extend from Amazon.Lambda.AspNetCoreServer.APIGatewayProxyFunction. You have to implement the abstract method Init to bootstrap the ASP.NET Core framework.
+
+```csharp
+public class LambdaFunction : Amazon.Lambda.AspNetCoreServer.APIGatewayProxyFunction
+{
+    protected override void Init(IWebHostBuilder builder)
+    {
+        builder
+            .UseContentRoot(Directory.GetCurrentDirectory())
+            .UseStartup()
+            .UseApiGateway();
+    }
+}
+
+```
+
+
+## Enable Tool Support in the AWS Toolkit for Visual Studio
+
+
+
+
 Transports other than Http and NetTCP.
 Message security beyond Transport & Transport with Message Credentials
 Distributed transactions
