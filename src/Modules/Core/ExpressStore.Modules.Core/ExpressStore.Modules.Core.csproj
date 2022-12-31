@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Infrastructure\Core\ExpressStore.Core.Infrastructure\ExpressStore.Core.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\WebAPIs\Core\ExpressStore.Services.Core.API\ExpressStore.Services.Core.API.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

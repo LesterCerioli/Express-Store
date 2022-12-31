@@ -1,7 +1,8 @@
 namespace ExpressStore.Core.Infrastructure.Models
 {
-    public abstract class EntityBaseWithTypedId
+    public abstract class EntityBaseWithTypedId<TId> : ValidatableObject, IEntityWithTypedId<TId>
     {
+        public virtual TId Id { get; protected set; }
         
     }
 }
