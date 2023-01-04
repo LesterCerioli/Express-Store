@@ -1,7 +1,8 @@
 namespace ExpressStore.Core.Infrastructure.Models
 {
-    public interface IEntityWithTypedId
+    public interface IEntityWithTypedId<TIde>
     {
+        TIde Id { get; }
          
     }
 }
