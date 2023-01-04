@@ -8,12 +8,11 @@ using ExpressStore.Core.Infrastructure.Models;
 
 namespace ExpressStore.Modules.Core.Data
 {
-    public class Repository<T>: IRepositoryWithTypedId<T, long>, IRepository<T>
+    public class Repository<T> : RepositoryWithTypedId<T, long>, IRepository<T>
         where T : class, IEntityWithTypedId<long>
     {
-        public Repository(CoreDbContext context)
+        public Repository(CoreDbContext context) : base(context)
         {
-
         }
     }
 }
