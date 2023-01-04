@@ -67,7 +67,7 @@ https://docs.simplcommerce.com/
 
 ## Roadmap
 
-https://github.com/simplcommerce/SimplCommerce/wiki/Roadmap
+https://github.com/LesterCerioli/Express-Store/wiki/Welcome-to-Express-Store
 
 ## How to contribute
 
