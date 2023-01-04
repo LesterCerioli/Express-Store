@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace ExpressStore.Modules.Core.Models
 {
-    public enum AddressType
+    public class WidgetZoneIds
     {
-        Shipping,
+        public static long HomeFeatured = 1;
 
-        Billing
+        public static long HomeMainContent = 2;
+
+        public static long HomeAfterMainContent = 3;
     }
 }

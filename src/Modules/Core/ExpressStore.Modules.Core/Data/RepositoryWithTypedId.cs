@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExpressStore.Modules.Core.Models
+namespace ExpressStore.Modules.Core.Data
 {
-    public enum AddressType
+    public class RepositoryWithTypedId
     {
-        Shipping,
-
-        Billing
     }
 }

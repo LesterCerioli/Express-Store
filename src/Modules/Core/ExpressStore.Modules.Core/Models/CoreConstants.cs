@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace ExpressStore.Modules.Core.Models
 {
-    public enum AddressType
+    public class CoreConstants
     {
-        Shipping,
-
-        Billing
+        public const string ThemeConfigKey = "Theme";
     }
 }

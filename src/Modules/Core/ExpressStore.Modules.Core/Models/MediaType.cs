@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace ExpressStore.Modules.Core.Models
 {
-    public enum AddressType
+    public enum MediaType
     {
-        Shipping,
+        Image = 1,
 
-        Billing
+        File = 5,
+
+        Video = 10,
     }
 }
