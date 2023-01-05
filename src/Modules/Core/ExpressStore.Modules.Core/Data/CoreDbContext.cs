@@ -10,6 +10,7 @@ using ExpressStore.Core.Infrastructure;
 using ExpressStore.Core.Infrastructure.Data;
 using ExpressStore.Core.Infrastructure.Models;
 using ExpressStore.Modules.Core.Models;
+using Microsoft.EntityFrameworkCore.Storage;
 
 namespace ExpressStore.Modules.Core.Data
 {
