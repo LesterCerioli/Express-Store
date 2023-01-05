@@ -1,5 +1,6 @@
 ﻿using ExpressStore.Modules.Core.Models;
 using ExpressStore.Modules.Core.Services.Contracts;
+using Microsoft.AspNetCore.Identity;
 
 namespace ExpressStore.Modules.Core.Services.Implementation
 {

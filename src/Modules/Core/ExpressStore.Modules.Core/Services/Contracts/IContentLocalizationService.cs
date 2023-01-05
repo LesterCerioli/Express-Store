@@ -1,3 +1,5 @@
+﻿using ExpressStore.Core.Infrastructure.Models;
+
 namespace ExpressStore.Modules.Core.Services.Contracts
 {
     public interface IContentLocalizationService
