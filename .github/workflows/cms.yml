@@ -8,7 +8,38 @@ on:
 
 jobs:
   
-  build_NET6_Cms:
+  build_ActivityLog:
+    runs-on: ubuntu-latest
+    steps:  
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore dependencies
+      run: dotnet restore ./ExpressStoreActivityLog.sln
+    - name: Build
+      run: dotnet build ./ExpressStoreActivityLog.sln
+    - name: Test
+      run: dotnet test ./ExpressStoreActivityLog.sln
+  
+  build_Catalog:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore dependencies
+      run: dotnet restore ./ExpressStoreCatalog.sln
+    - name: Build
+      run: dotnet build ./ExpressStoreCatalog.sln
+    - name: Test
+      run: dotnet test ./ExpressStoreCatalog.sln
+  
+  
+  build_Cms:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -23,4 +54,76 @@ jobs:
     - name: Test
       run: dotnet test ./ExpressStoreCms.sln
   
+  build_Comments:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore dependencies
+      run: dotnet restore ./ExpressStoreComments.sln
+    - name: Build
+      run: dotnet build ./ExpressStoreComments.sln
+    - name: Test
+      run: dotnet test ./ExpressStoreComments.sln
+
+  build_Contacts:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore dependencies
+      run: dotnet restore ./ExpressStoreContacts.sln
+    - name: Build
+      run: dotnet build ./ExpressStoreContacts.sln
+    - name: Test
+      run: dotnet test ./ExpressStoreContacts.sln  
+
+  build_Core:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore dependencies
+      run: dotnet restore ./ExpressStoreCore.sln
+    - name: Build
+      run: dotnet build ./ExpressStoreCore.sln
+    - name: Test
+      run: dotnet test ./ExpressStoreCore.sln  
+  build_Emails:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore dependencies
+      run: dotnet restore ./ExpressStoreEmails.sln
+    - name: Build
+      run: dotnet build ./ExpressStoreEmails.sln
+    - name: Test
+      run: dotnet test ./ExpressStoreEmails.sln  
+  build_Gateway001:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore dependencies
+      run: dotnet restore ./ExpressStoreGateway001.sln
+    - name: Build
+      run: dotnet build ./ExpressStoreGateway001.sln
+    - name: Test
+      run: dotnet test ./ExpressStoreGateway001.sln    
 
