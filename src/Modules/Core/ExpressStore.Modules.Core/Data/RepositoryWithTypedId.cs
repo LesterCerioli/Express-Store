@@ -12,7 +12,7 @@ namespace ExpressStore.Modules.Core.Data
 {
     public class RepositoryWithTypedId<T, TId> : IRepositoryWithTypedId<T, TId> where T : class, IEntityWithTypedId<TId>
     {
-        public RepositoryWithTypedId(CoreDbContext context)
+        public RepositoryWithTypedId(SimplDbContext context)
         {
             Context = context;
             DbSet = Context.Set<T>();
