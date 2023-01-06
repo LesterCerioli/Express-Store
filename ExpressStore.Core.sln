@@ -25,6 +25,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web APIs", "Web APIs", "{0F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Services.Core.API", "source\Web APIs\ExpressStore.Services.Core.API\ExpressStore.Services.Core.API.csproj", "{6470AD8D-18FE-4055-B2DE-60B54A2DCF52}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIs", "APIs", "{67BD1F58-3F16-470C-8E55-41C09BE10FE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Services.Core", "source\APIs\ExpressStore.Services.Core\ExpressStore.Services.Core.csproj", "{7CF80FBD-5CE8-4491-A253-6D4C3EBE1C06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +59,10 @@ Global
 		{6470AD8D-18FE-4055-B2DE-60B54A2DCF52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6470AD8D-18FE-4055-B2DE-60B54A2DCF52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6470AD8D-18FE-4055-B2DE-60B54A2DCF52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CF80FBD-5CE8-4491-A253-6D4C3EBE1C06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CF80FBD-5CE8-4491-A253-6D4C3EBE1C06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CF80FBD-5CE8-4491-A253-6D4C3EBE1C06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CF80FBD-5CE8-4491-A253-6D4C3EBE1C06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +77,8 @@ Global
 		{B024A18F-9235-49A2-B510-ED90F80DB799} = {462F7FAD-48D3-4E87-A013-65C59F0C29C4}
 		{0F41D598-FB2B-46E7-960D-32B0F1858F7C} = {4D8B3B95-23AB-44CF-A3B3-BDE963891481}
 		{6470AD8D-18FE-4055-B2DE-60B54A2DCF52} = {0F41D598-FB2B-46E7-960D-32B0F1858F7C}
+		{67BD1F58-3F16-470C-8E55-41C09BE10FE9} = {4D8B3B95-23AB-44CF-A3B3-BDE963891481}
+		{7CF80FBD-5CE8-4491-A253-6D4C3EBE1C06} = {67BD1F58-3F16-470C-8E55-41C09BE10FE9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1E58679A-31C8-4970-9D64-397D01915BFB}
