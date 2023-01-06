@@ -1,3 +1,12 @@
+using System.Collections.Generic;
+using System.Security.Claims;
+using System.Threading.Tasks;
+using MediatR;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Logging;
+using ExpressStore.Modules.Core.Events;
+
 namespace ExpressStore.Modules.Core.Extensions
 {
     public class SimplSignInManager<TUser> : SignInManager<TUser> where TUser : class
@@ -23,6 +32,5 @@ namespace ExpressStore.Modules.Core.Extensions
             var userId = await UserManager.GetUserIdAsync(user);
             await _mediator.Publish(new UserSignedIn { UserId = long.Parse(userId) });
         }
-        
     }
 }

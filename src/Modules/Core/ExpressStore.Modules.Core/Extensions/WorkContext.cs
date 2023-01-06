@@ -1,3 +1,14 @@
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using ExpressStore.Core.Infrastructure.Data;
+using ExpressStore.Core.Infrastructure.Core;
+using ExpressStore.Modules.Core.Models;
+using Microsoft.Extensions.Configuration;
+
 namespace ExpressStore.Modules.Core.Extensions
 {
     public class WorkContext : IWorkContext

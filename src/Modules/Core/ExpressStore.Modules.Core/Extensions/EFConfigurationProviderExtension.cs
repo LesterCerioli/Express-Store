@@ -1,3 +1,7 @@
+using System;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+
 namespace ExpressStore.Modules.Core.Extensions
 {
     public static class EFConfigurationProviderExtension

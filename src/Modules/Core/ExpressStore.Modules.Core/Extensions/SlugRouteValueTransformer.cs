@@ -1,3 +1,11 @@
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.Routing;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.EntityFrameworkCore;
+using ExpressStore.Core.Infrastructure.Data;
+using ExpressStore.Modules.Core.Models;
+
 namespace ExpressStore.Modules.Core.Extensions
 {
     public class SlugRouteValueTransformer : DynamicRouteValueTransformer

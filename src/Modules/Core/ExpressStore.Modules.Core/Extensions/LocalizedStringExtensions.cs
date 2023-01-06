@@ -1,6 +1,10 @@
+using System;
+using System.Linq;
+using Microsoft.AspNetCore.Mvc.Localization;
+
 namespace ExpressStore.Modules.Core.Extensions
 {
-    public class LocalizedStringExtensions
+    public static class LocalizedStringExtensions
     {
         public static Func<int, LocalizedHtmlString> GetTextPartsFunction(this LocalizedHtmlString localizedHtmlString, params string[] splitTokens)
         {
