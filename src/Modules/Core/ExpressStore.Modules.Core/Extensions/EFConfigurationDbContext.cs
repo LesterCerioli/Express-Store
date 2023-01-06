@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using ExpressStore.Modules.Core.Models;
+
 namespace ExpressStore.Modules.Core.Extensions
 {
     public class EFConfigurationDbContext : DbContext

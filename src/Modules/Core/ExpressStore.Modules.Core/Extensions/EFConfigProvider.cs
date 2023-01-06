@@ -1,3 +1,8 @@
+using System;
+using System.Linq;
+using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
+
 namespace ExpressStore.Modules.Core.Extensions
 {
     public class EFConfigProvider : ConfigurationProvider
