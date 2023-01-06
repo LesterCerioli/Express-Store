@@ -17,10 +17,10 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore ./ExpressStoreCore.sln
+      run: dotnet restore ./ExpressStore.Core.sln
     - name: Build
-      run: dotnet build ./ExpressStoreCore.sln
+      run: dotnet build ./ExpressStore.Core.sln
     - name: Test
-      run: dotnet test ./ExpressStoreCore.sln
+      run: dotnet test ./ExpressStore.Core.sln
   
   
