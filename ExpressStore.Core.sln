@@ -21,14 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressStore.Infrastructure
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressStore.Modules.DinkToPdf", "source\Modules\ExpressStore.Modules.DinkToPdf\ExpressStore.Modules.DinkToPdf.csproj", "{B024A18F-9235-49A2-B510-ED90F80DB799}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web APIs", "Web APIs", "{0F41D598-FB2B-46E7-960D-32B0F1858F7C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Services.Core.API", "source\Web APIs\ExpressStore.Services.Core.API\ExpressStore.Services.Core.API.csproj", "{6470AD8D-18FE-4055-B2DE-60B54A2DCF52}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIs", "APIs", "{67BD1F58-3F16-470C-8E55-41C09BE10FE9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Services.Core", "source\APIs\ExpressStore.Services.Core\ExpressStore.Services.Core.csproj", "{7CF80FBD-5CE8-4491-A253-6D4C3EBE1C06}"
-EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
