@@ -17,4 +17,8 @@
       </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\Modules\ExpressStore.Modules.Core\ExpressStore.Modules.Core.csproj" />
+    </ItemGroup>
+
 </Project>
