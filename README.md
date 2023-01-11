@@ -17,9 +17,7 @@
 | Azure Pipelines | All            |[![Build Status](https://simplcommerce.visualstudio.com/simplcommerce/_apis/build/status/simplcommerce.SimplCommerce?branchName=master)](https://simplcommerce.visualstudio.com/simplcommerce/_build/latest?definitionId=1&branchName=master)
 |Travis           | Linux / MacOS  |[![Build Status](https://travis-ci.org/simplcommerce/SimplCommerce.svg?branch=master)](https://travis-ci.org/simplcommerce/SimplCommerce) |
 
-## Online demo (Azure Website)
-- Store front: http://demo.simplcommerce.com
-- Administration: http://demo.simplcommerce.com/admin Email: admin@simplcommerce.com Password: 1qazZAQ!
+
 
 ## Docker
 
@@ -57,7 +55,7 @@ Continuous deployment: https://ci.simplcommerce.com
 
 - Update the connection string in appsettings.json in SimplCommerce.WebHost.
 - Run the simpl-build.sh file by issuing the following command: "sudo ./simpl-build.sh". For ubuntu 18: "sudo bash simpl-build.sh"
-- In the terminal, navigate to "src/SimplCommerce.WebHost" and type "dotnet run" and then hit "Enter".
+- In the terminal, navigate to "src/ExpressStore.WebHost" and type "dotnet run" and then hit "Enter".
 - Open http://localhost:5000 in the browser. The back-office can be accessed via /Admin using the following built-in account: admin@simplcommerce.com, 1qazZAQ!
 
 ## Technologies and frameworks used:
@@ -68,13 +66,6 @@ Continuous deployment: https://ci.simplcommerce.com
 - Angular 1.6.3
 - MediatR 7.0.0 for domain event
 
-## Docs
-
-https://docs.simplcommerce.com/
-
-## Roadmap
-
-https://github.com/LesterCerioli/Express-Store/wiki/Welcome-to-Express-Store
 
 ## How to contribute
 
@@ -96,15 +87,6 @@ Love our work and help us continue our activities? [[Become a backer](https://op
 
 <a href="https://opencollective.com/simplcommerce#backers" target="_blank"><img src="https://opencollective.com/simplcommerce/backers.svg?width=890"></a>
 
-## Sponsors
-
-Become a sponsor and get your logo on our README on Github with a link to your site. [[Become a sponsor](https://opencollective.com/simplcommerce#sponsor)]
-
-<a href="https://opencollective.com/simplcommerce/sponsor/0/website" target="_blank"><img src="https://opencollective.com/simplcommerce/sponsor/0/avatar.svg"></a>
-<a href="https://opencollective.com/simplcommerce/sponsor/1/website" target="_blank"><img src="https://opencollective.com/simplcommerce/sponsor/1/avatar.svg"></a>
-<a href="https://opencollective.com/simplcommerce/sponsor/2/website" target="_blank"><img src="https://opencollective.com/simplcommerce/sponsor/2/avatar.svg"></a>
-<a href="https://opencollective.com/simplcommerce/sponsor/3/website" target="_blank"><img src="https://opencollective.com/simplcommerce/sponsor/3/avatar.svg"></a>
-<a href="https://opencollective.com/simplcommerce/sponsor/4/website" target="_blank"><img src="https://opencollective.com/simplcommerce/sponsor/4/avatar.svg"></a>
 
 ## License
 
