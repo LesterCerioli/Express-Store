@@ -21,6 +21,20 @@
 - Store front: http://demo.simplcommerce.com
 - Administration: http://demo.simplcommerce.com/admin Email: admin@simplcommerce.com Password: 1qazZAQ!
 
+## Microservices Repositories
+
+#### ExpressStore-ActivityLog: https://github.com/LesterCerioli/ExpressStore-ActivityLog.git
+#### ExpressStore-API-Gateway: https://github.com/LesterCerioli/ExpressStore-API-Gateway.git
+#### ExpressStore-Catalog: https://github.com/LesterCerioli/ExpressStore-Catalog.git
+#### ExpressStore-Customers: https://github.com/LesterCerioli/ExpressStore-Customers.git
+#### ExpressStore-EmailSender-Smtp https://github.com/LesterCerioli/ExpressStore-EmailSender-Smtp.git
+#### ExpressStore-Orders: https://github.com/LesterCerioli/ExpressStore-Orders.git
+#### ExpressStore-Payments
+#### ExpressStore-Search: https://github.com/LesterCerioli/ExpressStore-Search.git
+#### ExpressStore-Vendors: https://github.com/LesterCerioli/ExpressStore-Vendors.git
+
+
+
 ## Docker
 
 For testing purpose only `docker run -p 5000:80 simplcommerce/ci-build`
