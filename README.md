@@ -204,3 +204,8 @@ CoreWCF is intended for customers who have been using WCF on .NET Framework and 
 
 Microsoft Support
 We recognize how important support is to enterprise customers, and so we are pleased to announce that Microsoft Product Support will be available for CoreWCF customers.
+
+# Core API
+
+![image](https://user-images.githubusercontent.com/13305576/211828114-7994a797-f237-4120-a61e-7c9e4f15183f.png)
+
