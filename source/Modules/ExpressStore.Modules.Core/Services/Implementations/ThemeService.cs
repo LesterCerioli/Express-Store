@@ -1,17 +1,17 @@
-﻿using ExpressStore.Infrastructure.Data;
-using ExpressStore.Infrastructure;
-using ExpressStore.Modules.Core.Models;
-using ExpressStore.Modules.Core.Services.Contracts;
-using Microsoft.Extensions.Configuration;
-using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO.Compression;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ExpressStore.Infrastructure.Data;
+using ExpressStore.Infrastructure;
+using ExpressStore.Modules.Core.Models;
+using ExpressStore.Modules.Core.Services.Contracts;
+using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
+using ExpressStore.Modules.Core.ViewModels;
 using Microsoft.EntityFrameworkCore;
-using ExpressStore.Modules.Core.Shared.ViewModels;
 
 namespace ExpressStore.Modules.Core.Services.Implementations
 {

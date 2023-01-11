@@ -1,17 +1,20 @@
-using System.Net;
+﻿using System.Net;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using ExpressStore.Infrastructure.Data;
+using ExpressStore.Modules.Core.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ExpressStore.Services.Core.API.Controllers
 {
-    [ApiController]
     [Area("Core")]
-    [Authorization(Roles = "admin")]
+    [Authorize(Roles = "admin")]
     [Route("api/widget-instances")]
-    public class WidgetInstanceApiController : ControllerBase
+    public class WidgetInstanceApiController : Controller
     {
         private readonly IRepository<WidgetInstance> _widgetInstanceRepository;
         private readonly IRepositoryWithTypedId<Widget, string> _widgetRespository;
@@ -64,6 +67,5 @@ namespace ExpressStore.Services.Core.API.Controllers
 
             return Json(total);
         }
-        
     }
 }

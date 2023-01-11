@@ -1,14 +1,17 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ExpressStore.Infrastructure.Data;
+using ExpressStore.Modules.Core.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ExpressStore.Services.Core.API.Controllers
 {
     [Area("Core")]
     [Route("api/districts")]
-    public class DistrictApiController : ControllerBase
+    public class DistrictApiController : Controller
     {
         private readonly IRepository<District> _districtRepository;
 
@@ -32,6 +35,5 @@ namespace ExpressStore.Services.Core.API.Controllers
 
             return Json(districts);
         }
-        
     }
 }

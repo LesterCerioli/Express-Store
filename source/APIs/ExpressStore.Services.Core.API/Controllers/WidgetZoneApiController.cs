@@ -1,16 +1,19 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ExpressStore.Infrastructure.Data;
+using ExpressStore.Modules.Core.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ExpressStore.Services.Core.API.Controllers
 {
-    [ApiController]
     [Area("Core")]
     [Authorize(Roles = "admin")]
-    [Route("api/widget-zone")]
-    public class WidgetZoneApiController : ControllerBase
+    [Route("api/widget-zones")]
+    public class WidgetZoneApiController : Controller
     {
         private readonly IRepository<WidgetZone> _widgetZoneRespository;
 

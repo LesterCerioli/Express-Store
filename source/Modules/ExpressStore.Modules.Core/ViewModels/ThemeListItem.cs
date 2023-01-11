@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExpressStore.Modules.Core.Shared.ViewModels
+namespace ExpressStore.Modules.Core.ViewModels
 {
     public class ThemeListItem
     {

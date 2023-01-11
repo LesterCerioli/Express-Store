@@ -1,10 +1,11 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ExpressStore.Infrastructure.Data;
 using ExpressStore.Infrastructure.Web.SmartTable;
 using ExpressStore.Modules.Core.Models;
+using ExpressStore.Services.Core.API.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -13,7 +14,7 @@ namespace ExpressStore.Services.Core.API.Controllers
 {
     [Area("Core")]
     [Route("api/countries")]
-    public class CountryApiController : ControllerBase
+    public class CountryApiController : Controller
     {
         private readonly IRepositoryWithTypedId<Country, string> _countryRepository;
 
@@ -23,7 +24,7 @@ namespace ExpressStore.Services.Core.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get([FromQuery]bool? shippingEnabled)
+        public async Task<IActionResult> Get([FromQuery] bool? shippingEnabled)
         {
             var query = _countryRepository.Query();
             if (shippingEnabled.HasValue)
@@ -140,7 +141,7 @@ namespace ExpressStore.Services.Core.API.Controllers
                     IsCityEnabled = model.IsCityEnabled,
                     IsZipCodeEnabled = model.IsZipCodeEnabled,
                     IsDistrictEnabled = model.IsDistrictEnabled
-            };
+                };
 
                 _countryRepository.Add(country);
                 await _countryRepository.SaveChangesAsync();
@@ -172,6 +173,5 @@ namespace ExpressStore.Services.Core.API.Controllers
 
             return NoContent();
         }
-        
     }
 }
