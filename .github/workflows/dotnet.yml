@@ -2,15 +2,14 @@ name: Express Store CI & CD
 
 on:
   push:
-    branches: [ master ]
+    branches: [ dev-p1 ]
   pull_request:
     branches: [ master ]
 
 jobs:
+  
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Setup .NET
@@ -18,8 +17,9 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore ./SimplCommerce.sln
+      run: dotnet restore ./ExpressStore.Core.sln
     - name: Build
-      run: dotnet build ./SimplCommerce.sln
+      run: dotnet build ./ExpressStore.Core.sln
     - name: Test
-      run: dotnet test ./SimplCommerce.sln
+      run: dotnet test ./ExpressStore.Core.sln
+  
