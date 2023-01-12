@@ -15,7 +15,7 @@
 | Build server    | Platform       | Status      |
 |-----------------|----------------|-------------|
 | Azure Pipelines | All            |[![Build Status](https://simplcommerce.visualstudio.com/simplcommerce/_apis/build/status/simplcommerce.SimplCommerce?branchName=master)](https://simplcommerce.visualstudio.com/simplcommerce/_build/latest?definitionId=1&branchName=master)
-|Travis           | Linux / MacOS  |[![Build Status](https://travis-ci.org/simplcommerce/SimplCommerce.svg?branch=master)](https://travis-ci.org/simplcommerce/SimplCommerce) |
+|Travis           | Linux / MacOS  |[![Build Status](https://dev.azure.com/Lucas-Technology-Services1/Express-Store/_build) |
 
 
 
