@@ -43,6 +43,8 @@ Continuous deployment: https://ci.simplcommerce.com
 - In Visual Studio, press "Control + F5".
 - The back-office can be accessed via /Admin using the following built-in account: admin@simplcommerce.com, 1qazZAQ!
 
+## Project Board: https://github.com/users/LesterCerioli/projects/6/views/1
+
 ## Mac/Linux with PostgreSQL
 
 #### Prerequisite
