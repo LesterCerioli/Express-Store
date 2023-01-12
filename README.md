@@ -84,7 +84,7 @@ This project exists thanks to all the people who contribute.
 
 ## Backers
 
-Love our work and help us continue our activities? [[Become a backer](https://opencollective.com/simplcommerce#backer)]
+Love our work and help us continue our activities? 
 
 <a href="https://opencollective.com/simplcommerce#backers" target="_blank"><img src="https://opencollective.com/simplcommerce/backers.svg?width=890"></a>
 
