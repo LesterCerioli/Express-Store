@@ -21,7 +21,7 @@
 
 ## Docker
 
-For testing purpose only `docker run -p 5000:80 simplcommerce/ci-build`
+For testing purpose only `docker run -p 5000:80 express-store/ci-build`
 
 
 ## Visual Studio 2022 and SQL Server
