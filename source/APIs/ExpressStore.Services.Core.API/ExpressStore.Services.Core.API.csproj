@@ -8,16 +8,19 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-    </ItemGroup>
-
-    <ItemGroup>
       <Content Include="..\..\..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="7.0.2" />
+      <PackageReference Include="Microsoft.Extensions.Primitives" Version="7.0.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Infrastructure\ExpressStore.Infrastructure\ExpressStore.Infrastructure.csproj" />
       <ProjectReference Include="..\..\Modules\ExpressStore.Modules.Core\ExpressStore.Modules.Core.csproj" />
     </ItemGroup>
 

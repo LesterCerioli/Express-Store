@@ -1,4 +1,6 @@
-﻿namespace ExpressStore.Services.Core.API.ViewModels.Account;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+
+namespace ExpressStore.Services.Core.API.ViewModels.Account;
 
 public class SendCodeViewModel
 {

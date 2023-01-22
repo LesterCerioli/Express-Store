@@ -1,17 +1,22 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ExpressStore.Infrastructure.Data;
+using ExpressStore.Infrastructure.Web.SmartTable;
+using ExpressStore.Modules.Core.Models;
+using ExpressStore.Services.Core.API.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ExpressStore.Services.Core.API.Controllers
 {
     [Area("Core")]
     [Authorize(Roles = "admin")]
     [Route("api/customergroups")]
-    public class CustomerGroupApiController : ControllerBase
+    public class CustomerGroupApiController : Controller
     {
-
         private readonly IRepository<CustomerGroup> _customerGroupRepository;
 
         public CustomerGroupApiController(IRepository<CustomerGroup> customergroupRepository)
@@ -81,7 +86,7 @@ namespace ExpressStore.Services.Core.API.Controllers
         public async Task<IActionResult> Get(long id)
         {
             var customerGroup = await _customerGroupRepository.Query().FirstOrDefaultAsync(x => x.Id == id);
-            if(customerGroup == null)
+            if (customerGroup == null)
             {
                 return NotFound();
             }
@@ -123,7 +128,7 @@ namespace ExpressStore.Services.Core.API.Controllers
             if (ModelState.IsValid)
             {
                 var customerGroup = await _customerGroupRepository.Query().FirstOrDefaultAsync(x => x.Id == id);
-                if(customerGroup == null)
+                if (customerGroup == null)
                 {
                     return NotFound();
                 }
@@ -133,7 +138,7 @@ namespace ExpressStore.Services.Core.API.Controllers
                 customerGroup.IsActive = model.IsActive;
                 customerGroup.LatestUpdatedOn = DateTimeOffset.Now;
 
-                await  _customerGroupRepository.SaveChangesAsync();
+                await _customerGroupRepository.SaveChangesAsync();
                 return Accepted();
             }
 
@@ -150,9 +155,8 @@ namespace ExpressStore.Services.Core.API.Controllers
             }
 
             customerGroup.IsDeleted = true;
-            await  _customerGroupRepository.SaveChangesAsync();
+            await _customerGroupRepository.SaveChangesAsync();
             return NoContent();
         }
-        
     }
 }

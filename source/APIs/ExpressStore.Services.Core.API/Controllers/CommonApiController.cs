@@ -1,17 +1,20 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System;
+using System.IO;
 using System.Threading.Tasks;
-using ExpressStore.Modules.Core.Services.Contracts;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Net.Http.Headers;
+using ExpressStore.Modules.Core.Services.Contracts;
+
+
 
 namespace ExpressStore.Services.Core.API.Controllers
 {
     [Area("Core")]
     [Authorize(Roles = "admin")]
     [Route("api/common")]
-    public class CommonApiController : ControllerBase
+    public class CommonApiController : Controller
     {
         private readonly IMediaService _mediaService;
 
@@ -29,6 +32,5 @@ namespace ExpressStore.Services.Core.API.Controllers
 
             return Ok(_mediaService.GetMediaUrl(fileName));
         }
-        
     }
 }

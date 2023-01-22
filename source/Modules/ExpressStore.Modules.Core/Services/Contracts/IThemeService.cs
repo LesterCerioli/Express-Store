@@ -1,6 +1,9 @@
-
-
-using ExpressStore.Modules.Core.Shared.ViewModels;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ExpressStore.Modules.Core.ViewModels;
 
 namespace ExpressStore.Modules.Core.Services.Contracts
 {
@@ -15,6 +18,5 @@ namespace ExpressStore.Modules.Core.Services.Contracts
         Task Install(Stream stream, string themeName);
 
         void Delete(string themeName);
-         
     }
 }

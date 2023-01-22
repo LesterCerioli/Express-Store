@@ -1,12 +1,16 @@
-﻿namespace ExpressStore.Services.Core.API.ViewModels;
-
-public class ThemeListItem
+﻿namespace ExpressStore.Services.Core.API.ViewModels
 {
-    public string Name { get; set; }
+    public class ThemeListItem
+    {
+        public string Name { get; set; }
 
-    public string DisplayName { get; set; }
+        public string DisplayName { get; set; }
 
-    public string ThumbnailUrl { get; set; }
+        public string ThumbnailUrl { get; set; }
 
-    public bool IsCurrent { get; set; } 
+        public bool IsCurrent { get; set; }
+    }
+
+
 }
+

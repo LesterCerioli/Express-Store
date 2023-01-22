@@ -1,9 +1,12 @@
-﻿using ExpressStore.Infrastructure.Web;
+﻿using System.Security.Claims;
+using ExpressStore.Infrastructure.Web;
 using ExpressStore.Modules.Core.Models;
 using ExpressStore.Modules.Core.Services.Contracts;
+using ExpressStore.Services.Core.API.ViewModels.Account;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Localization;
 
 namespace ExpressStore.Services.Core.API.Controllers
