@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7780CCB3-72A8-41C1-A83A-800E095100A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{7B61559D-8BB1-4DB3-9195-1FFB4E79765B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.Core", "src\Modules\ExpressStore.Modules.Core\ExpressStore.Modules.Core.csproj", "{9C13DC40-5A9B-4DFA-AB24-B9677CA1BDCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Infrastructure", "src\ExpressStore.Infrastructure\ExpressStore.Infrastructure.csproj", "{089C7C76-B70F-4649-BC3B-FDE6A37BD086}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C13DC40-5A9B-4DFA-AB24-B9677CA1BDCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C13DC40-5A9B-4DFA-AB24-B9677CA1BDCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C13DC40-5A9B-4DFA-AB24-B9677CA1BDCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C13DC40-5A9B-4DFA-AB24-B9677CA1BDCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{089C7C76-B70F-4649-BC3B-FDE6A37BD086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{089C7C76-B70F-4649-BC3B-FDE6A37BD086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{089C7C76-B70F-4649-BC3B-FDE6A37BD086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{089C7C76-B70F-4649-BC3B-FDE6A37BD086}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7B61559D-8BB1-4DB3-9195-1FFB4E79765B} = {7780CCB3-72A8-41C1-A83A-800E095100A0}
+		{9C13DC40-5A9B-4DFA-AB24-B9677CA1BDCC} = {7B61559D-8BB1-4DB3-9195-1FFB4E79765B}
+		{089C7C76-B70F-4649-BC3B-FDE6A37BD086} = {7780CCB3-72A8-41C1-A83A-800E095100A0}
+	EndGlobalSection
+EndGlobal
