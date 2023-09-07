@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+
 namespace ExpressStore.Infrastructure.Models
 {
     public abstract class ValidatableObject
@@ -13,6 +16,5 @@ namespace ExpressStore.Infrastructure.Models
             Validator.TryValidateObject(this, new ValidationContext(this, null, null), validationResults, true);
             return validationResults;
         }
-        
     }
 }

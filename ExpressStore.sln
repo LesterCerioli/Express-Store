@@ -1,4 +1,3 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
@@ -36,6 +35,24 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.Notifications", "src\Modules\ExpressStore.Modules.Notifications\ExpressStore.Modules.Notifications.csproj", "{0B6A601C-7A76-4811-88D4-84B924475FB0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.Orders", "src\Modules\ExpressStore.Modules.Orders\ExpressStore.Modules.Orders.csproj", "{110D6A63-255B-4081-8D4B-0FA277BF6607}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.PaymentBraintree", "src\Modules\ExpressStore.Modules.PaymentBraintree\ExpressStore.Modules.PaymentBraintree.csproj", "{290D58A6-B2A3-468C-846B-DFBFE4FBEF2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.PaymentCashfree", "src\Modules\ExpressStore.Modules.PaymentCashfree\ExpressStore.Modules.PaymentCashfree.csproj", "{24B1F535-D55A-4423-A130-68C2E646C4DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.PaymentCoD", "src\Modules\ExpressStore.Modules.PaymentCoD\ExpressStore.Modules.PaymentCoD.csproj", "{E5D8F002-4FE5-4391-BE21-9308E31B562D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.PaymentMono", "src\Modules\ExpressStore.Modules.PaymentMono\ExpressStore.Modules.PaymentMono.csproj", "{3A643454-956D-49BB-AC6E-9D990E61D11D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.PaymentNgranLuong", "src\Modules\ExpressStore.Modules.PaymentNgranLuong\ExpressStore.Modules.PaymentNgranLuong.csproj", "{64902A33-1B59-4DD8-8927-60D58D018BC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.PaymentPayPalExpress", "src\Modules\ExpressStore.Modules.PaymentPayPalExpress\ExpressStore.Modules.PaymentPayPalExpress.csproj", "{26556973-78E6-4C28-8721-AD34728DF06E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.Payments", "src\Modules\ExpressStore.Modules.Payments\ExpressStore.Modules.Payments.csproj", "{93422E6F-778B-45FA-B50B-A4D78255167D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.PaymentStripe", "src\Modules\ExpressStore.Modules.PaymentStripe\ExpressStore.Modules.PaymentStripe.csproj", "{9A85A619-F366-4753-A15D-4E37211DCC79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.Pricing", "src\Modules\ExpressStore.Modules.Pricing\ExpressStore.Modules.Pricing.csproj", "{7DB66A8D-11C2-4C0C-B78E-D5B5690799CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -106,6 +123,42 @@ Global
 		{110D6A63-255B-4081-8D4B-0FA277BF6607}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{110D6A63-255B-4081-8D4B-0FA277BF6607}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{110D6A63-255B-4081-8D4B-0FA277BF6607}.Release|Any CPU.Build.0 = Release|Any CPU
+		{290D58A6-B2A3-468C-846B-DFBFE4FBEF2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{290D58A6-B2A3-468C-846B-DFBFE4FBEF2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{290D58A6-B2A3-468C-846B-DFBFE4FBEF2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{290D58A6-B2A3-468C-846B-DFBFE4FBEF2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24B1F535-D55A-4423-A130-68C2E646C4DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B1F535-D55A-4423-A130-68C2E646C4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B1F535-D55A-4423-A130-68C2E646C4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B1F535-D55A-4423-A130-68C2E646C4DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5D8F002-4FE5-4391-BE21-9308E31B562D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5D8F002-4FE5-4391-BE21-9308E31B562D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5D8F002-4FE5-4391-BE21-9308E31B562D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5D8F002-4FE5-4391-BE21-9308E31B562D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A643454-956D-49BB-AC6E-9D990E61D11D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A643454-956D-49BB-AC6E-9D990E61D11D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A643454-956D-49BB-AC6E-9D990E61D11D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A643454-956D-49BB-AC6E-9D990E61D11D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64902A33-1B59-4DD8-8927-60D58D018BC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64902A33-1B59-4DD8-8927-60D58D018BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64902A33-1B59-4DD8-8927-60D58D018BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64902A33-1B59-4DD8-8927-60D58D018BC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26556973-78E6-4C28-8721-AD34728DF06E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26556973-78E6-4C28-8721-AD34728DF06E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26556973-78E6-4C28-8721-AD34728DF06E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26556973-78E6-4C28-8721-AD34728DF06E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93422E6F-778B-45FA-B50B-A4D78255167D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93422E6F-778B-45FA-B50B-A4D78255167D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93422E6F-778B-45FA-B50B-A4D78255167D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93422E6F-778B-45FA-B50B-A4D78255167D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A85A619-F366-4753-A15D-4E37211DCC79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A85A619-F366-4753-A15D-4E37211DCC79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A85A619-F366-4753-A15D-4E37211DCC79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A85A619-F366-4753-A15D-4E37211DCC79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DB66A8D-11C2-4C0C-B78E-D5B5690799CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB66A8D-11C2-4C0C-B78E-D5B5690799CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB66A8D-11C2-4C0C-B78E-D5B5690799CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB66A8D-11C2-4C0C-B78E-D5B5690799CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7B61559D-8BB1-4DB3-9195-1FFB4E79765B} = {7780CCB3-72A8-41C1-A83A-800E095100A0}
@@ -124,5 +177,14 @@ Global
 		{AC7BE513-BF34-494E-8B76-C1C2185109D0} = {7B61559D-8BB1-4DB3-9195-1FFB4E79765B}
 		{0B6A601C-7A76-4811-88D4-84B924475FB0} = {7B61559D-8BB1-4DB3-9195-1FFB4E79765B}
 		{110D6A63-255B-4081-8D4B-0FA277BF6607} = {7B61559D-8BB1-4DB3-9195-1FFB4E79765B}
+		{290D58A6-B2A3-468C-846B-DFBFE4FBEF2D} = {7B61559D-8BB1-4DB3-9195-1FFB4E79765B}
+		{24B1F535-D55A-4423-A130-68C2E646C4DA} = {7B61559D-8BB1-4DB3-9195-1FFB4E79765B}
+		{E5D8F002-4FE5-4391-BE21-9308E31B562D} = {7B61559D-8BB1-4DB3-9195-1FFB4E79765B}
+		{3A643454-956D-49BB-AC6E-9D990E61D11D} = {7B61559D-8BB1-4DB3-9195-1FFB4E79765B}
+		{64902A33-1B59-4DD8-8927-60D58D018BC6} = {7B61559D-8BB1-4DB3-9195-1FFB4E79765B}
+		{26556973-78E6-4C28-8721-AD34728DF06E} = {7B61559D-8BB1-4DB3-9195-1FFB4E79765B}
+		{93422E6F-778B-45FA-B50B-A4D78255167D} = {7B61559D-8BB1-4DB3-9195-1FFB4E79765B}
+		{9A85A619-F366-4753-A15D-4E37211DCC79} = {7B61559D-8BB1-4DB3-9195-1FFB4E79765B}
+		{7DB66A8D-11C2-4C0C-B78E-D5B5690799CD} = {7B61559D-8BB1-4DB3-9195-1FFB4E79765B}
 	EndGlobalSection
 EndGlobal
