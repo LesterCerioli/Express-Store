@@ -1,0 +1,13 @@
+﻿@model long
+
+@{
+    ViewBag.Title = "Result";
+    var localizedTextParts = Localizer["We are sorry that we could not complete <a>your order</a>. Please revisit and complete it."].GetTextPartsFunction("<a>", "</a>");
+}
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger" role="alert">@TempData["Error"]</div>
+}
+
+<p>@localizedTextParts(0)<a href="~/user/orders/{Model}">@localizedTextParts(1)</a>@localizedTextParts(2)</p>
