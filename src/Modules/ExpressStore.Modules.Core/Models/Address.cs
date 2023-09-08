@@ -1,6 +1,7 @@
+using NetDevPack.Domain;
 namespace ExpressStore.Modules.Core.Models
 {
-    public class Address
+    public class Address : Entity, IAggregateRoot
     {
         
     }

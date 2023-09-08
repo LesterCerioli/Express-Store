@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -53,6 +53,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.PaymentStripe", "src\Modules\ExpressStore.Modules.PaymentStripe\ExpressStore.Modules.PaymentStripe.csproj", "{9A85A619-F366-4753-A15D-4E37211DCC79}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.Pricing", "src\Modules\ExpressStore.Modules.Pricing\ExpressStore.Modules.Pricing.csproj", "{7DB66A8D-11C2-4C0C-B78E-D5B5690799CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Infrastructure.CrossCutting", "src\ExpressStore.Infrastructure.CrossCutting\ExpressStore.Infrastructure.CrossCutting.csproj", "{5F5256A9-1113-4A7A-838E-4D3172322C0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -159,6 +161,10 @@ Global
 		{7DB66A8D-11C2-4C0C-B78E-D5B5690799CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DB66A8D-11C2-4C0C-B78E-D5B5690799CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DB66A8D-11C2-4C0C-B78E-D5B5690799CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F5256A9-1113-4A7A-838E-4D3172322C0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F5256A9-1113-4A7A-838E-4D3172322C0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F5256A9-1113-4A7A-838E-4D3172322C0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F5256A9-1113-4A7A-838E-4D3172322C0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7B61559D-8BB1-4DB3-9195-1FFB4E79765B} = {7780CCB3-72A8-41C1-A83A-800E095100A0}
@@ -186,5 +192,6 @@ Global
 		{93422E6F-778B-45FA-B50B-A4D78255167D} = {7B61559D-8BB1-4DB3-9195-1FFB4E79765B}
 		{9A85A619-F366-4753-A15D-4E37211DCC79} = {7B61559D-8BB1-4DB3-9195-1FFB4E79765B}
 		{7DB66A8D-11C2-4C0C-B78E-D5B5690799CD} = {7B61559D-8BB1-4DB3-9195-1FFB4E79765B}
+		{5F5256A9-1113-4A7A-838E-4D3172322C0C} = {7780CCB3-72A8-41C1-A83A-800E095100A0}
 	EndGlobalSection
 EndGlobal
