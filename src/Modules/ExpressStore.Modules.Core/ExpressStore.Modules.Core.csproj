@@ -16,4 +16,8 @@
     <PackageReference Include="NetDevPack" Version="6.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\ExpressStore.Infrastructure\ExpressStore.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
