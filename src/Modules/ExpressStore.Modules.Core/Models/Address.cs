@@ -1,14 +1,16 @@
 ﻿using ExpressStore.Modules.Core.ValueObjects;
 using NetDevPack.Domain;
+
 namespace ExpressStore.Modules.Core.Models
 {
     public class Address : Entity, IAggregateRoot
     {
+        private readonly List<City> _cities;
 
         private readonly List<District> _districts;
 
-        public Address(string? contactName, Telphone telephone, 
-            string? addressLine1, string? addressLine2, State state, 
+        public Address(string? contactName, Telphone telephone,
+            string? addressLine1, string? addressLine2, State state,
             City city, Country country, District district)
         {
             ContactName = contactName;
@@ -19,6 +21,7 @@ namespace ExpressStore.Modules.Core.Models
             City = city;
             Country = country;
             _districts = new List<District>();
+            _cities = new List<City>();
         }
 
         public string? ContactName { get; private set; }
@@ -34,9 +37,11 @@ namespace ExpressStore.Modules.Core.Models
         public City City { get; private set; }
 
         public Country Country { get; private set; }
-               
+
 
         public District District { get; private set; }
+
+        public IReadOnlyCollection<City> Cities => _cities.AsReadOnly();
 
         public IReadOnlyCollection<District> Districts => _districts.AsReadOnly();
     }
