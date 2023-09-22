@@ -7,6 +7,7 @@ namespace ExpressStore.Modules.Core.Exceptions
                : base(message) =>
                Title = title;
 
+
         public string Title { get; }
     }
 
