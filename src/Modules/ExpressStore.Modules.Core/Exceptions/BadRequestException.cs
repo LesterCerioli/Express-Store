@@ -1,7 +1,10 @@
-namespace ExpressStore.Modules.Core.Exceptions
+﻿namespace ExpressStore.Modules.Core.Exceptions
 {
-    public abstract class BadRequestException
+    public abstract class BadRequestException : ApplicationException
     {
-        
+        protected BadRequestException(string message)
+            : base("Bad Request", message)
+        {
+        }
     }
 }

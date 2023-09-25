@@ -1,7 +1,10 @@
-namespace ExpressStore.Modules.Core.Exceptions
+﻿namespace ExpressStore.Modules.Core.Exceptions
 {
-    public abstract class NotFoundException
+    public abstract class NotFoundException : ApplicationException
     {
-        
+        protected NotFoundException(string message)
+            : base("Not Found", message)
+        {
+        }
     }
 }
