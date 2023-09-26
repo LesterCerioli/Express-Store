@@ -2,6 +2,7 @@ namespace ExpressStore.Modules.Core.ViewModels
 {
     public class ThemeManifestViewModel
     {
+        [Key]
         public Guid Id { get; set; }
 
         [DisplayName("NomeCompleto")]

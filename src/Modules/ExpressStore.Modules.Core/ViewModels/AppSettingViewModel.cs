@@ -2,6 +2,7 @@ namespace ExpressStore.Modules.Core.ViewModels
 {
     public class AppSettingViewModel
     {
+        [Key]
         public Guid Id { get; set; }
 
         [DisplayName("Valor")]

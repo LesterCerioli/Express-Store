@@ -2,6 +2,9 @@ namespace ExpressStore.Modules.Core.ViewModels
 {
     public class MediaViewModel
     {
+        [Key]
+        public Guid Id { get; set; }
+
         [Required(ErrorMessage = "O preenchimento deste campo é obrigatório")]
         [MaxLength(450)]
         public string Caption { get; set; }

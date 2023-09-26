@@ -2,6 +2,7 @@ namespace ExpressStore.Modules.Core.ViewModels
 {
     public class AddressViewModel
     {
+        [Key]
         public Guid Id { get; set; }
 
         [DisplayName("NomeContato")]

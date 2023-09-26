@@ -2,6 +2,7 @@ namespace ExpressStore.Modules.Core.ViewModels
 {
     public class CityViewModel
     {
+        [Key]
         public Guid Id { get; set; }
 
         [DisplayName("NomeCidade")]
